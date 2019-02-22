@@ -1,0 +1,53 @@
+{
+  "name": "mini-react",
+  "version": "0.0.1",
+  "description": "Mini React Like Lib",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage && http-server ./coverage/lcov-report -p 3000 -o",
+    "dev": "concurrently --kill-others \"webpack --mode=development --watch\" \"http-server ./public -p 3000 -o -d\"",
+    "build": "webpack --mode=production",
+    "start": "npm run build && http-server ./public -p 3000 -o"
+  },
+  "keywords": [],
+  "author": "Cleiton Loiola <klaygomes@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": ">=8.11.3",
+    "npm": "~5.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-beta.55",
+    "@babel/runtime": "^7.0.0-beta.55"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.55",
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0-beta.4",
+    "concurrently": "^3.6.1",
+    "eslint": "^5.2.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "http-server": "^0.11.1",
+    "jest": "^23.4.2",
+    "webpack": "^4.0.0-beta.3",
+    "webpack-cli": "^3.1.0"
+  }
+}

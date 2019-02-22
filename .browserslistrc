@@ -1,0 +1,7 @@
+# Minimun supoprted browsers based on public/index.html boilerplate
+edge >= 12
+firefox >= 36
+chrome >= 49
+ios_saf >= 10
+opera >= 36
+and_chr >= 67
