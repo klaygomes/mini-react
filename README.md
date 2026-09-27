@@ -142,3 +142,7 @@ In order to build this application localy you must first install [nodejs](https:
 ### `npm run test:coverage`
 
 > Generate coverage report into the folder `./coverage/Icov-report/`
+
+---
+
+Made by Cleiton at [Esta couve flor](https://www.estacouveflor.com), a blog about the whole stack, from React on the screen down to the clock tree of an STM32.
